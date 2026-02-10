@@ -1,0 +1,22 @@
+package string;
+
+public class FindLengthOfStringWithoutUsingLengthKeyword {
+public static void main(String[] args) {
+	String str="Java is Easy";
+	System.out.println("Length of string is: ");
+	System.out.println(checkStringLength(str));
+}
+public static int checkStringLength(String str)
+{
+	int count=0;
+//	toCharArray() converts string into an array of characters
+//	Example: "Java" → {J, a, v, a}
+//
+//	Loop runs once for each character
+	for(char ch: str.toCharArray())
+	{
+		count++;
+	}
+	return count;
+}
+}
