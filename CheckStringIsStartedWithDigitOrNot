@@ -1,0 +1,17 @@
+package string;
+
+public class CheckStringIsStartedWithDigitOrNot {
+	public static void main(String [] args)
+		{
+			String str="123Hello";
+			System.out.println(checkString(str));
+		}
+	public static boolean checkString(String str)
+	{
+		if(str.charAt(0)>='0' && str.charAt(0)<='9')
+		{
+			return true;
+		}
+		return false;
+	}
+}
