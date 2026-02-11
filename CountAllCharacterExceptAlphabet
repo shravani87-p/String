@@ -1,0 +1,20 @@
+package string;
+
+public class CountAllCharacterExceptAlphabet {
+public static void main(String[] args) {
+	String str="JAvaIs&&E@sy00";
+	iscount(str);
+}
+public static void iscount(String str)
+{
+	int count=0;
+	for(char ch: str.toCharArray())
+	{
+		if(!((ch>='a' && ch<='z')|| (ch>='A' && ch<='Z')))
+		{
+			count++;
+		}
+	}
+	System.out.println("count is: "+count);
+}
+}
