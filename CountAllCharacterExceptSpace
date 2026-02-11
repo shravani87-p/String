@@ -1,0 +1,18 @@
+package string;
+
+public class CountAllCharacterExceptSpace {
+	public static void main(String[] args) {
+		String str=" Java is easy ";
+		countChar(str);
+	}
+	public static void countChar(String str)
+	{
+		int count=0;
+		for(char ch: str.toCharArray())
+		{
+			if(ch!=' ')
+				count++;
+		}
+		System.out.println("count space: "+count);
+	}
+}
