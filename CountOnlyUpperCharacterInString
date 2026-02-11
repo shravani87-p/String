@@ -1,0 +1,21 @@
+package string;
+
+public class CountOnlyUpperCharacterInString {
+public static void main(String[] args) {
+	String str="ShrAVaNI";
+	countUpperChar(str);
+}
+public static void countUpperChar(String str)
+{
+	int count=0;
+	for(int i=0;i<str.length();i++)
+	{
+		if(str.charAt(i)>='A' && str.charAt(i)<='Z')
+		{
+			count++;
+		}
+	}
+	System.out.println("Count of special Character is: "+count);
+}
+
+}
