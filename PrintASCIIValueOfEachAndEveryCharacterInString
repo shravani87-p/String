@@ -1,0 +1,16 @@
+package string;
+
+public class PrintASCIIValueOfEachAndEveryCharacterInString {
+public static void main(String[] args) {
+	String str="AaBZ";
+	value(str);
+}
+public static void value(String str)
+{
+	char ch[]=str.toCharArray();
+	for(char c:ch)
+	{
+		System.out.println("Assci value is: "+(int)c);
+	}
+}
+}
