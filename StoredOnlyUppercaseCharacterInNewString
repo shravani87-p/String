@@ -1,0 +1,21 @@
+package string;
+
+public class StoredOnlyUppercaseCharacterInNewString {
+public static void main(String[] args) {
+	String str="QspiderInstitution";
+	stored(str);
+}
+public static void stored(String str)
+{
+	String newString="";
+	for(int i=0;i<str.length();i++)
+	{
+		char c=str.charAt(i);
+		if(c>='A' && c<='Z')
+		{
+			newString+=c;
+		}
+	}
+	System.out.println(newString);
+}
+}
