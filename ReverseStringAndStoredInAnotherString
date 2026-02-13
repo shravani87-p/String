@@ -1,0 +1,18 @@
+package string;
+
+public class ReverseStringAndStoredInAnotherString {
+public static void main(String[] args) {
+	String str="Shravani";
+	reverse(str);
+}
+public static void reverse(String str)
+{
+	String newString="";
+	for(int i=str.length()-1;i>=0 ;i--)
+	{
+		char ch=str.charAt(i);
+		newString=newString+ch;
+	}
+	System.out.println("Revese string is: "+newString);
+}
+}
