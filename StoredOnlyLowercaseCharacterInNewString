@@ -1,0 +1,21 @@
+package string;
+
+public class StoredOnlyLowercaseCharacterInNewString {
+public static void main(String[] args) {
+	String str="Qspider";
+	print(str);
+}
+public static void print(String str)
+{
+	String res="";
+	char a[]=str.toCharArray();
+	for(char ch:a)
+	{
+		if(ch>='a' && ch<='z')
+		{
+			res=res+ch;
+		}
+	}
+	System.out.println(res);
+}
+}
