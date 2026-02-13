@@ -1,0 +1,21 @@
+package string;
+
+public class StoredOnlyDigitsInNewString {
+public static void main(String[] args) {
+	String str="Qspi12@8777";
+	storedDigit(str);
+}
+public static void storedDigit(String str)
+{
+	String res="";
+	char ch[]=str.toCharArray();
+	for(char a: ch)
+	{
+		if(a>='0' && a<='9')
+		{
+			res=res+a;
+		}
+	}
+	System.out.println(res);
+}
+}
