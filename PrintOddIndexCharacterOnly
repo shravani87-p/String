@@ -1,0 +1,18 @@
+package string;
+
+public class PrintOddIndexCharacterOnly {
+public static void main(String[] args) {
+	String s="pizza";
+	print(s);
+}
+public static void print(String s)
+{
+	for(int i=0;i<s.length();i++)
+	{
+		if(i%2!=0)
+		{
+			System.out.println(s.charAt(i));
+		}
+	}
+}
+}
