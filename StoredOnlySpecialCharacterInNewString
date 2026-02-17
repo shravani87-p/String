@@ -1,0 +1,21 @@
+package string;
+
+public class StoredOnlySpecialCharacterInNewString {
+public static void main(String[] args) {
+	String str="J@v@199**7%#";
+	store(str);
+}
+public static void store(String str)
+{
+	String res="";
+	char ch[]=str.toCharArray();
+	for(char c:ch)
+	{
+		if(!((c>='A' && c<='Z')||(c>='a' && c<='z')||(c>='0' && c<='9')))
+		{
+			res=res+c;
+		}
+	}
+	System.out.println("Special character is: "+res);
+}
+}
