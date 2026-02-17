@@ -1,0 +1,26 @@
+package string;
+
+public class StoredUpperCharacterAndThenOtherCharacter {
+public static void main(String[] args) {
+	String str="Java IS Portable";
+	System.out.println(print(str));
+}
+public static String print(String str)
+{
+	String upper="";
+	String other="";
+	char ch[]=str.toCharArray();
+	for(char c:ch)
+	{
+		if(c>='A' && c<='Z')
+		{
+			upper+=c;
+		}
+		else
+		{
+			other+=c;
+		}
+	}
+	return upper+other;
+}
+}
