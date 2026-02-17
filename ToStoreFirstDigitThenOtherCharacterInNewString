@@ -1,0 +1,28 @@
+package string;
+
+public class ToStoreFirstDigitThenOtherCharacterInNewString {
+public static void main(String[] args) {
+	String str="JAva1987";
+	System.out.println(store(str));
+}
+public static String store(String str)
+{
+	String res="";
+	char ch[]=str.toCharArray();
+	for(char c: ch)
+	{
+		if(c>='0' && c<='9')
+		{
+			res+=c;
+		}
+	}
+	for(char c:ch)
+	{
+		if((c>='a'&& c<='z')||(c>='A' && c<='Z'))
+		{
+			res+=c;
+		}
+	}
+	return res;
+}
+}
