@@ -1,0 +1,26 @@
+package string;
+
+public class StoredLowerCharacterAndThenOtherCharacter {
+	public static void main(String[] args) {
+		String str="Java IS Portable";
+		System.out.println(print(str));
+	}
+	public static String print(String str)
+	{
+		String lower="";
+		String other="";
+		char ch[]=str.toCharArray();
+		for(char c:ch)
+		{
+			if(c>='a' && c<='z')
+			{
+				lower+=c;
+			}
+			else
+			{
+				other+=c;
+			}
+		}
+		return lower+other;
+	}
+}
