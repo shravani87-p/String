@@ -1,0 +1,25 @@
+package string;
+
+public class ConvertUToLAndLToUStoredInNewString {
+public static void main(String[] args) {
+	String str="Sky Is Blue";
+	System.out.println(print(str));
+}
+public static String print(String str)
+{
+	String res="";
+	char ch[]=str.toCharArray();
+	for(char c: ch)
+	{
+		if(c>='A' && c<='Z')
+		{
+			res=res+(char)(c+32);
+		}
+		else
+		{
+			res=res+(char)(c-32);
+		}
+	}
+	return res;
+}
+}
