@@ -1,0 +1,21 @@
+package string;
+
+public class StoredOnlyAlphabetInNewStringInNewString {
+public static void main(String[] args) {
+	String str="J@v@isEASY123";
+	store(str);
+}
+public static void store(String str)
+{
+	String newString="";
+	char ch[]=str.toCharArray();
+	for(char c:ch)
+	{
+		if((c>='a' && c<='z')||(c>='A' && c<='Z'))
+		{
+			newString+=c;
+		}
+	}
+	System.out.println("New String is: "+newString);
+}
+}
