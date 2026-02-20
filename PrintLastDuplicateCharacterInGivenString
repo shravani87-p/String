@@ -1,0 +1,33 @@
+package string;
+
+public class PrintLastDuplicateCharacterInGivenString 
+{
+	public static void main(String[] args) {
+		String str="Java is easy and simple";
+		System.out.println(printChar(str));
+	}
+	
+
+public static char printChar(String str)
+{
+	String res="";
+	for(int i=0;i<str.length();i++)
+	{
+		char ch=str.charAt(i);
+		boolean flag=false;
+		for(int j=i+1;j<str.length();j++)
+		{
+			if(ch==str.charAt(j))
+			{
+				flag=true;
+				break;
+			}
+		}
+		if(flag && res.indexOf(ch)==-1)
+		{
+			res=res+ch;
+		}
+	}
+	return res.charAt(res.length()-1);
+}
+}
